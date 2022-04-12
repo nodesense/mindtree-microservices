@@ -71,3 +71,21 @@ projects
         app
             ....
 ```
+
+```
+Reviews
+    reviews
+    ratings 
+        calculation 
+
+    need restarent_id [post method]
+    
+    Inter process communication 
+        Micro Service to Micro Services
+
+        REST API call to restuarent service from review service 
+            check restuarent exist or not
+
+        RabbitMQ
+
+```
