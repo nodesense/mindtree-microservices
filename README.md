@@ -89,3 +89,24 @@ Reviews
         RabbitMQ
 
 ```
+
+
+# Swagger
+
+Swagger API documentation tool, useful for testing, validation etc
+
+
+demo editor here https://editor.swagger.io/
+
+
+```
+npm i swagger-ui-express
+npm install --save yamljs
+
+```
+
+refer app/index.js file and yaml file example
+
+in browser,
+
+http://localhost:8080/api-docs
