@@ -103,6 +103,11 @@ demo editor here https://editor.swagger.io/
 npm i swagger-ui-express
 npm install --save yamljs
 
+npm install mocha
+npm install chai
+npm install sinon
+
+
 ```
 
 refer app/index.js file and yaml file example
