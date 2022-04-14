@@ -206,3 +206,48 @@ items : [
 
 where as amount is sum of each item qty * price by node.js
 ```
+
+
+# review service
+
+```
+.post(/reviews) { 
+    .....
+    ....
+    
+}
+.put
+.delete
+
+review.service.js 
+
+    create_review: (......) => {
+        ....
+        ..
+        this.calculate_avg_rating(restuarent_id)
+    }
+    update_review: (......) => {
+        ....
+        ..
+        this.calculate_avg_rating(restuarent_id)
+    }
+    
+    delete_review: (......) => {
+        ....
+        ..
+        this.calculate_avg_rating(restuarent_id)
+    }
+    
+    calculate_avg_rating: (restuarent_id) => {
+        use mongo db to calculate avg and total count of reviews based restuarent_id [aggregate query]
+
+        after avg rating and total reviews,
+
+        publish the  avg rating and total reviews on rabbit mq
+    }
+```
+
+## On Restaurant side service
+
+the susbcriber  can run indepedent, use service to update restaurant data
+
