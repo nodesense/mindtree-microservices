@@ -127,6 +127,8 @@ Restaurant model
      city: string
      state: string,
      cusine: string,
+     avg_rating: number
+     total_reviews: number
      locations: [10,2,45.67]
      created_at: datetime
      updated_at: datetime
