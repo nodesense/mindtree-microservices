@@ -115,3 +115,83 @@ refer app/index.js file and yaml file example
 in browser,
 
 http://localhost:8080/api-docs
+
+# Model examples only
+
+## Restaurant
+
+```
+Restaurant model
+     _id : ObjectId 
+     name :string
+     city: string
+     state: string,
+     cusine: string,
+     locations: [10,2,45.67]
+     created_at: datetime
+     updated_at: datetime
+```
+
+```
+Menu model [either sub-documents or separate collection up to you]
+       _id : ObjectId 
+       name :string
+       category: string [veg|non-veg]
+       price: number
+       restaurant_id
+        created_at: datetime
+        updated_at: datetime
+```
+
+# Customer Service
+```
+    customer model
+
+        _id
+        email
+        full_name 
+        hashed_password
+        created_at: datetime
+        updated_at: datetime
+```
+
+## review model
+
+```
+
+reviews
+
+    model 
+        _id : ObjectId 
+        restaurant_id: ObjectId
+        customer_id: ObjectId
+        description : string 
+        rating: number
+        created_at: datetime
+        updated_at: datetime
+```
+
+
+## Order Service /PostgreSQL/MongoDB
+```
+    model 
+        _id/id 
+        customer_id
+        restaurant_id
+        amount: number,
+        items: JSON String or Nested Array of Object
+        created_at: datetime
+        updated_at: datetime
+
+```
+
+```
+items is sub collection or json array
+
+items : [
+    {menu_id, restaurant_id, qty, price}
+]
+
+
+where as amount is sum of each item qty * price by node.js
+```
