@@ -17,6 +17,7 @@ MONGO_SERVER=
 MONGO_DATABASE=
 MONGO_USERNAME=
 MONGO_PASSWORD=
+RABBIT_MQ_URL=amqps://username:password@lionfish.rmq.cloudamqp.com/yourqueue
 
 ```
 
@@ -88,6 +89,14 @@ Reviews
 
         RabbitMQ
 
+```
+
+# RabbitMQ
+
+https://www.cloudamqp.com/
+
+```
+npm install amqplib
 ```
 
 
