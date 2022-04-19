@@ -18,7 +18,9 @@ MONGO_DATABASE=
 MONGO_USERNAME=
 MONGO_PASSWORD=
 RABBIT_MQ_URL=amqps://username:password@lionfish.rmq.cloudamqp.com/yourqueue
-
+REDIS_HOST=xyx.ap-southeast-1-1.ec2.cloud.redislabs.com:16952
+REDIS_PASSWORD=password
+REDIS_USERNAME=admin
 ```
 
 ## Points to take care
@@ -251,3 +253,27 @@ review.service.js
 
 the susbcriber  can run indepedent, use service to update restaurant data
 
+
+## Redis Cache
+
+```
+https://www.npmjs.com/package/redis
+
+for free redis cluster
+
+https://redis.com/try-free/
+
+
+Use Set via node.js 
+
+the key is Restaurant id, value result json /not valid json here(beware)
+
+ SET "4343223423423423" "{restaurent: {}, reviews:[...], menus: [...]}"
+
+
+ DEL "4343223423423423"
+
+
+ GET "4343223423423423"
+
+```
