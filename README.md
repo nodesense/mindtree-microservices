@@ -263,6 +263,12 @@ for free redis cluster
 
 https://redis.com/try-free/
 
+API to use cache in Restaurant service
+
+implement an API with GET method
+
+GET /restaurants/complete/<<restid>>
+
 
 Use Set via node.js 
 
