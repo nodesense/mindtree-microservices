@@ -277,3 +277,30 @@ the key is Restaurant id, value result json /not valid json here(beware)
  GET "4343223423423423"
 
 ```
+
+
+# PM2
+
+open command as administrator
+
+```
+npm install pm2 -g
+```
+
+create ecosystem.config.js
+
+```
+pm2 start ecosystem.config.js
+```
+
+susbcribe-review is one of the service mentioned in ecosystem.config.js
+
+```
+ pm2 restart susbcribe-review
+```
+
+
+https://pm2.keymetrics.io/docs/usage/process-management/
+
+For Logs refer https://pm2.keymetrics.io/docs/usage/log-management/
+
