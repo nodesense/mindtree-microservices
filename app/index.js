@@ -10,7 +10,7 @@ const YAML = require('yamljs');
 const app = express()
 
 app.use(cors())
-app.use("/orders", orderRoutes)
+app.use("/orders",   orderRoutes)
 
 const swaggerDocument = YAML.load('./swagger.yaml');
 
